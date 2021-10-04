@@ -1,0 +1,18 @@
+body{
+    background-color: white;
+}
+
+    .container{
+        display: grid;
+        width: 99%;
+        margin: auto;
+        grid-template-rows: 10% 30% 15% 30% 15%;
+        grid-gap: 10px;
+    }
+
+    .box{
+        border: 1px thin red;
+    }
+    .nav_box{
+        display: fixed;
+    }
