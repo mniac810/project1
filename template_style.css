@@ -1,7 +1,7 @@
 body{
     background-color: white;
     margin:0;
-
+    width: 1vp;
 }
 h1{
     font-family: Inter;
@@ -122,20 +122,19 @@ h3{
 
     .content{
         display: grid;
-        grid-template-rows: ;
     }
 
     .feature_box{
         display: flex;
         flex-direction: row;
-        justify-items: flex-start;
+        align-items: center;
     }
     .feature_item{
         margin-right: 1em;
-        
     }
     .feature_button{
         width: 50%;
+        background-color: white;
         color: #6C5CE7;
         font-family: Inter;
         font-style: normal;
@@ -149,3 +148,20 @@ h3{
         border: 2px #6C5CE7 solid;
         border-radius: 999px;
     }
+
+    #icon_1{
+        width: 3.5em;
+        height: 3.5em;
+    } 
+    #icon_2{
+        width: 3.5em;
+        height: 3.5em;
+    } 
+    #icon_3{
+        width: 3.5em;
+        height: 3.5em;
+    } 
+    #icon_4{
+        width: 3.5em;
+        height: 3.5em;
+    } 
