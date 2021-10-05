@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="template_style.html">
+    <link rel="stylesheet" href="template_style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container_box">
-        <div class="header_box">
-            <div class="nav_box">
-                <img src="Content_images/icon-layout.png">
-                <div> Grid </div>
-                <div> How it works </div>
-                <div class="nav_link"> Who we are </div>
-                <div class="nav_link"> What we do </div>
-                <div class="nav_link"> Contact us </div>
-                <div class="nav_button"> Sign in</div>
-            </div>
-        </div>
-        <div class="content_box">
-            <h1>Combine <span id="fine">fine</span> images</h1>
+    <!-- Navigation bar -->
+    <div class="nav">
+        <div class="nav_item" id="title"> <img src="Content_images/icon-layout.png"> Grid </div>
+        <div class="buffer dot">•</div>
+        <div class="buffer dot">•</div>
+        <div class="buffer dot">•</div>
+        <div class="nav_item link"> How it works </div>
+        <div class="nav_item dot">•</div>
+        <div class="nav_item link"> Who we are </div>
+        <div class="nav_item dot">•</div>
+        <div class="nav_item link"> What we do </div>
+        <div class="nav_item dot">•</div>
+        <div class="nav_item link"> Contact us </div>
+        <div class="buffer dot">•</div>
+        <div class="buffer dot">•</div>
+        <div class="nav_item button"> Sign in</div>
+    </div>
+    <div class="container">
+        
+
+        <!-- content grid -->
+        <div class="content box">
+            <h1>Combine <span id="fine"><span id="underline"></span>fine</span> images</h1>
             <h2>To represent a product</h2>
-            <p class="content_para" id="para1">
+            <p class="content para" id="para1">
                 Use mixed grid with imagery, replace with your own photos and descriptions
             </p>
-            <p class="content_para" id="para2">
+            <p class="content para" id="para2">
                 This is multipurpose grid, it fits for portfolio, services or agency web sites
             </p>
-            <p class="content_para" id="para3">
+            <p class="content para" id="para3">
                 <strong>We aimed to deliver HQ templates for Figma</strong> Used by 123 People
             </p>
             <img src="Content_images/Image_1.png" alt="img1">
@@ -43,53 +52,55 @@
             <p class="added_text">Consider it done!</p>
             <p class="added_text">See my goal?</p>
         </div>
-        <div class="information_box">
-            <h3>Delivering good designs since 1954 emoji emoji</h3>
-            <p>We're the first multi-purpose design kit solutions for businesses. We help you bridge
+        <div class="information box">
+            <h3>Delivering good designs since 1954 🚚💨</h3>
+            <p id="info">We're the first multi-purpose design kit solutions for businesses. We help you bridge
                 gaps between your layouts, templates and developers to empower all involved.
             </p>
             <div class="feature_box">
-                <img>
-                <strong>Support</strong><br>
-                <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma </p>
-                <p class="feature_button">Learn more</p>
-            </div>
-            <div class="feature_box">
-                <img>
-                <strong>Sales growth</strong><br>
-                <p>Identify qualified customers with easy-to use live chat messaging and AI-based Sales Bot</p>
-                <p class="feature_button">Learn more</p>
-            </div>
-            <div class="feature_box">
-                <img>
-                <strong>Component-driven</strong><br>
-                <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma</p>
-                <p class="feature_button">Learn more</p>
-            </div>
-            <div class="feature_box">
-                <img>
-                <strong>Swap the icon</strong><br>
-                <p> You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter</p>
-                <p class="feature_button">Learn more</p>
+                <div class="feature_item">
+                    <img id="icon" src="Content_images/Vector.png">
+                    <strong>Support</strong><br>
+                    <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma </p>
+                    <p class="feature_button">Learn more</p>
+                </div>
+                <div class="feature_item">
+                    <img id="icon_1" src="Content_images/Vector-1.png">
+                    <strong>Sales growth</strong><br>
+                    <p>Identify qualified customers with easy-to use live chat messaging and AI-based Sales Bot</p>
+                    <p class="feature_button">Learn more</p>
+                </div>
+                <div class="feature_item">
+                    <img>
+                    <strong>Component-driven</strong><br>
+                    <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma</p><br>
+                    <p class="feature_button">Learn more</p>
+                </div>
+                <div class="feature_item">
+                    <img>
+                    <strong>Swap the icon</strong><br>
+                    <p> You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter </p><br>
+                    <p class="feature_button">Learn more</p>
+                </div>
             </div>
         </div>
 
-        <div class="Pricing_box">
+        <div class="Pricing box">
             <h2>Affordable pricing</h2>
             <p id="billme"> Bill me <span id=monthly>monthly</span> ~ yearly</p>
-            <div class="price_box">
-                <div class="price_title"> Like a pussy </div>
+            <div class="price box">
+                <div class="price title"> Like a pussy </div>
                 <div class="cost"><span id="amount">Free</span>/forever</div>
                 <ul>
                     <li>Components-driven system</li>
                     <li>Sales-boosting landing pages</li>
                     <li>Awesome Feather icons pack</li>
                 </ul>
-                <div class="buy_button">Try for free</div>
+                <div class="buy button">Try for free</div>
             </div>
 
-            <div class="prefered_price_box">
-                <div class="prefered_price_title">Individual</div>
+            <div class="prefered price box">
+                <div class="prefered price title">Individual</div>
                 <div class="cost"><span id="amount"></span></div>
                 <ul>
                     <li>Components-driven system</li>
@@ -98,11 +109,11 @@
                     <li>Themed into 3 different styles</li>
                     <li>Will help to learn Figma</li>
                 </ul>
-                <div class="buy_button">Regular license</div>
+                <div class="buy button">Regular license</div>
             </div>
 
-            <div class="price_box">
-                <div class="price_title"></div>
+            <div class="price box">
+                <div class="price title"></div>
                 <div class="cost"><span id="amount"></span></div>
                 <ul>
                     <li>Components-driven system</li>
@@ -110,35 +121,35 @@
                     <li>Awesome Feather icon pack</li>
                     <li>Themed into 3 different styles</li>
                 </ul>
-                <div class="buy_button">Extended license</div>
+                <div class="buy button">Extended license</div>
             </div>
         </div>
-        <div class="footer_box">
-            <div class="ff_box" id="ff1">
-                <p class="ff_title">FOLLOW US<br></p>>
+        <div class="footer box">
+            <div class="ff box" id="ff1">
+                <p class="ff title">FOLLOW US<br></p>>
                 <img src="Content_images/icon-facebook.png">
                 <img src="Content_images/icon-linkedin.png">
                 <img src="Content_images/icon-slack.png">
                 <img src="Content_images/icon-twitter.png">
             </div>
 
-            <div class="ff_box" id="ff2">
-                <p class="ff_title">FOLLOW US</p>
+            <div class="ff box" id="ff2">
+                <p class="ff title">FOLLOW US</p>
                 <p id="email"> hello@fapsterapp.com</p>
             </div>
-            <div class="ff_box" id="ff3">
-                <p class="ff_title">INFORMATION</p>
-                <div class="ff3_content">About Fapster app</div>
-                <div class="ff3_content">Onhover/Active</div>
-                <div class="ff3_content">We are hiring!</div>
-                <div class="ff3_content">Get In Touch</div>
-                <div class="ff3_content">Privacy Policy</div>
-                <div class="ff3_content">Resources</div>
-                <div class="ff3_content">Things We Like</div>
-                <div class="ff3_content">Terms of Service</div>
+            <div class="ff box" id="ff3">
+                <p class="ff title">INFORMATION</p>
+                <div class="ff3 content">About Fapster app</div>
+                <div class="ff3 content">Onhover/Active</div>
+                <div class="ff3 content">We are hiring!</div>
+                <div class="ff3 content">Get In Touch</div>
+                <div class="ff3 content">Privacy Policy</div>
+                <div class="ff3 content">Resources</div>
+                <div class="ff3 content">Things We Like</div>
+                <div class="ff3 content">Terms of Service</div>
               </div>
-            <div class="ff_box" id="ff4">
-                <p class="ff_title">KEEP IN TOUCH</p>
+            <div class="ff box" id="ff4">
+                <p class="ff title">KEEP IN TOUCH</p>
                 <input type="text" id="Your name" name="Your name" placeholder="Your name">
                 <input type="text" id="Your email" name="Your email" placeholder="E-mail">
                 <input type="text" id="message" name="message" placeholder="Leave your message">
