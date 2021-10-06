@@ -166,19 +166,32 @@ h3{
         display: grid;
     }
     
-    .content_grid{
+    #content_grid{
         display: grid;
-        grid-template-columns: 20vw 70vw;
-        grid-template-rows: 60vp 40vp;
+        grid-template-columns: 20vw 60vw;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "grid1 grid2"
         "grid1 grid3"
         ;
     }
+        #grid2{
+            display:grid;
+            grid-template-columns: 40vw 10vw 10vw;
+            grid-template-rows: 10vp 1fr;
+            grid-template-areas:
+            "img7 para2 para2"
+            "img7 img4 img5"
+            ;
+        }
+        #grid3{
+            display: grid;
+            grid-template-columns: 20vw 25vw 10vw;
+        }
 
-    /* .content_img{
+    .content_img{
         width:100%;
-    } */
+    }
 
     .feature_box{
         display: flex;
