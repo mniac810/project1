@@ -3,6 +3,10 @@ body{
     margin:0;
     width: 90vw;
     font-family: Inter;
+    background-image: url(Content_images/Wave.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 h1{
@@ -41,6 +45,7 @@ h2{
     text-align: center;
     letter-spacing: -1px;
     margin: 0;
+    margin-bottom: 0.5em;
     color: #2D3436;
     /* border: 1px red solid; */
 }
@@ -55,6 +60,7 @@ h3{
         width: 100%;
         padding: 0% 5%;
         margin: 0;
+        background: url(Content_images/Wave.png) bottom / contain no-repeats;
     }
 
     .nav{
@@ -167,26 +173,54 @@ h3{
     }
     
     #content_grid{
+        margin-left: 6vw;
         display: grid;
         grid-template-columns: 20vw 60vw;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 5vp 10vp;
         grid-template-areas: 
         "grid1 grid2"
         "grid1 grid3"
         ;
+        gap: 10px;
+        
+        
     }
-        #grid2{
-            display:grid;
-            grid-template-columns: 40vw 10vw 10vw;
-            grid-template-rows: 10vp 1fr;
-            grid-template-areas:
-            "img7 para2 para2"
-            "img7 img4 img5"
-            ;
+        #grid1{
+            grid-area: grid1;
         }
+        #grid2{
+            grid-area: grid2;
+            display:grid;
+            gap: 10px;
+            grid-template-columns: 35vw 35vw;
+            grid-template-rows: 3vp;
+            grid-template-areas: 
+            "img7 s_grid";
+        }
+            #s_grid{
+                display: grid;
+                grid-template-columns: 10vw 10vw;
+                grid-template-rows: 9em 1fr;
+                grid-template-areas:
+                "para2 para2"
+                "img4 img5";
+                gap: 10px;
+            }
+                #para2{
+                    grid-area: para2;
+                }
+                #img4{
+                    grid-area: img4;
+                    bottom: 0;
+                }
+                #img5{
+                    grid-area: img5;
+                } 
         #grid3{
+            grid-area: grid3;
             display: grid;
             grid-template-columns: 20vw 25vw 10vw;
+            gap: 10px;
         }
 
     .content_img{
@@ -229,7 +263,7 @@ h3{
         line-height: 32px;
 
         display: flex;
-        flex-direction: row;
+        justify-content: center;
     }
 
     .price_box{
@@ -238,6 +272,7 @@ h3{
         flex-direction: column;
 
         margin: 1em;
+
     }
     .price_title, .cost{
         margin-left: 2em;
@@ -260,6 +295,9 @@ h3{
     }
 
     .footer{
+        margin-left: 12vw;
+        margin-top: 80px;
+
         display: grid;
         grid-template-columns: repeat(4, 10vw);
         grid-template-rows: repeat(4, 1fr);
@@ -269,6 +307,7 @@ h3{
         "ff3 ff3 ff3 ff3 ff4 ff4 ff4 ff4"
         "_ _ _ _ _ _ _ _";
         grid-gap: 10px;
+
     }
     .ff_title{
         font-size: 12px;
@@ -334,3 +373,4 @@ h3{
             #ff_button{
                 grid-area: send;
             }
+
