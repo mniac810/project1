@@ -1,45 +1,40 @@
 body{
     background-color: white;
     margin:0;
-    width: 1vp;
-}
-h1{
+    width: 90vw;
     font-family: Inter;
-    font-style: normal;
+}
+
+h1{
     font-weight: 700;
     font-size: 96px;
     line-height: 104px;
     text-align: center;
+    position: relative;
 
     color: #2D3436;
     text-shadow: 0px 4px 0px whitesmoke;
     /* border: 1px red solid; */
-    margin-top: 1em;
     margin-bottom: 0;
 }
 
 p, strong{
-    font-family: Inter;
-    font-style: normal;
     font-size: 20px;
     line-height: 36px;
 }
 
+li{
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
+}
 #fine{
     color: red;
+    background: url(Content_images/fine_underline.png) bottom center / contain no-repeat;
 }
 
-#underline{
-    background-color: yellow;
-    background-position: bottom;
-    height: 5%;
-    border-radius: 8px;
-    background-image: url(Content_images/1.png);
-}
 
-h2{
-    font-family: Inter;
-    font-style: normal;
+h2{ 
     font-weight: 900;
     font-size: 64px;
     line-height: 77px;
@@ -50,9 +45,7 @@ h2{
     /* border: 1px red solid; */
 }
 
-h3{
-    font-family: Inter;
-    font-style: normal;
+h3{    
     font-weight: bold;
     font-size: 24px;
     line-height: 48px;
@@ -64,9 +57,6 @@ h3{
         margin: 0;
     }
 
-    .box{
-        /* border: 1px solid red; */
-    }
     .nav{
         background-color: white;
         display: flex;
@@ -80,12 +70,67 @@ h3{
         /* border-bottom: 2px black solid; */
         box-shadow: 0px 3px 3px 0px rgb(0,0,0,.18);
     }
-    .button{
+    .blue_button{
+        border:2px #6C5CE7 solid;
         background-color: #6C5CE7;
-        padding: 5px 20px;
-        border-radius: 22px;
         color: white;
+        border-radius: 22px;
         text-shadow: 0px 2px 4px rgba(38, 50, 56, 0.16), 0px 4px 8px rgba(38, 50, 56, 0.08);
+        padding: 0px 20px;
+        
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        transition: ease-in-out 0.4s;
+    }
+
+    #preferred_button{
+        width: 55%;
+    }
+
+    .blue_button:hover{
+        background-color: white;
+        color: #6C5CE7;
+        border: 2px #6C5CE7 solid;
+    }
+
+    .blue_button:active{
+        color: white;
+        background-color: #6C5CE7;
+    }
+
+    .white_button{
+        width: 50%;
+        background-color: white;
+        color: #6C5CE7;
+        
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        border: 2px #6C5CE7 solid;
+        border-radius: 999px;
+
+        transition: all 0.4s ease-in-out;
+    }
+
+    .white_button:hover{
+        color: white;
+        background-color: blue;
+        border: white;
+    }
+
+    .white_button:active{
+        background-color: white;
+        color: #6C5CE7;
+        border: 2px #6C5CE7 solid;
+
     }
     .dot{
         color: #FDCB6E;
@@ -98,8 +143,7 @@ h3{
         align-items: center;
         justify-content: center;
         letter-spacing: 0.2px;
-        font-family: Inter;
-        font-style: normal;
+        
         font-weight: bold;
         font-size: 16px;
         line-height: 32px;
@@ -113,8 +157,6 @@ h3{
         color: black;
     }
     #title{
-        font-family: Inter;
-        font-style: normal;
         font-weight: bold;
         font-size: 30px;
         line-height: 34px;
@@ -123,6 +165,20 @@ h3{
     .content{
         display: grid;
     }
+    
+    .content_grid{
+        display: grid;
+        grid-template-columns: 20vw 70vw;
+        grid-template-rows: 60vp 40vp;
+        grid-template-areas: 
+        "grid1 grid2"
+        "grid1 grid3"
+        ;
+    }
+
+    /* .content_img{
+        width:100%;
+    } */
 
     .feature_box{
         display: flex;
@@ -132,36 +188,136 @@ h3{
     .feature_item{
         margin-right: 1em;
     }
-    .feature_button{
-        width: 50%;
-        background-color: white;
-        color: #6C5CE7;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: bold;
+    
+
+    #icon_1, #icon_2, #icon_3, #icon4{
+        width: 3.5em;
+        height: 3.5em;
+    } 
+
+
+        #billme{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 48px;
+            color: #ADADAD;
+
+            margin-top: 0;
+            text-align: center;
+        }
+            #monthly{
+                color: #6C5CE7;
+                background: url(Content_images/monthly_underline.png) bottom center / contain no-repeat;
+            }
+
+
+    .pricing{
         font-size: 18px;
         line-height: 32px;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.2px;
 
-        border: 2px #6C5CE7 solid;
-        border-radius: 999px;
+        display: flex;
+        flex-direction: row;
     }
 
-    #icon_1{
-        width: 3.5em;
-        height: 3.5em;
-    } 
-    #icon_2{
-        width: 3.5em;
-        height: 3.5em;
-    } 
-    #icon_3{
-        width: 3.5em;
-        height: 3.5em;
-    } 
-    #icon_4{
-        width: 3.5em;
-        height: 3.5em;
-    } 
+    .price_box{
+        height: 22em;
+        display: flex;
+        flex-direction: column;
+
+        margin: 1em;
+    }
+    .price_title, .cost{
+        margin-left: 2em;
+        font-weight: bold;
+    }
+    
+    .price_title{
+        color: #6C5CE7;
+    }
+
+    .amount{
+        font-size: 44px;
+        line-height: 56px;
+        font-weight: bold;
+    }
+
+    .preferred{
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px 1px rgb(0,0,0,.18);
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(4, 10vw);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "ff1 ff1 ff1 ff1 ff2 ff2 ff2 ff2"
+        "ff3 ff3 ff3 ff3 ff4 ff4 ff4 ff4"
+        "ff3 ff3 ff3 ff3 ff4 ff4 ff4 ff4"
+        "_ _ _ _ _ _ _ _";
+        grid-gap: 10px;
+    }
+    .ff_title{
+        font-size: 12px;
+        line-height: 16px;
+        color: #ADADAD;
+            }
+
+        #ff1{
+            grid-area: ff1;
+        }
+            .ff1_content{
+                padding-right: 2em;
+            }
+    
+        #ff2{
+            grid-area: ff2;
+        }
+            #email{
+                font-weight: bold;
+                color:#6C5CE7;
+                font-size: 28px;
+            }
+        #ff3{
+            grid-area: ff3;
+        }
+        #ff3_item_box{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 5px;
+        }
+        #ff4{
+            grid-area: ff4;
+        }
+        #ff4_item_box{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 5px;
+            grid-template-areas: 
+            "name name mail mail"
+            "name name mail mail"
+            "mes send _ _"
+            "mes send _ _"
+            ;
+        }
+        .ff4_item{
+            border-radius: 10px;
+            border: white solid 1px;
+            background-color: whitesmoke;
+        }
+            #your_name{
+                grid-area: name;
+            }
+            #your_email{
+                grid-area: mail;
+            }
+            #message{
+                grid-area: mes;
+                color:#6C5CE7;
+                border:#6C5CE7;
+            }
+            #ff_button{
+                grid-area: send;
+            }

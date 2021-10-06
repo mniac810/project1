@@ -23,7 +23,7 @@
         <div class="nav_item link"> Contact us </div>
         <div class="buffer dot">•</div>
         <div class="buffer dot">•</div>
-        <div class="nav_item button"> Sign in</div>
+        <button class="nav_item blue_button" type="button"> Sign in</button>
     </div>
     <div class="container">
         
@@ -32,25 +32,28 @@
         <div class="content box">
             <h1>Combine <span id="fine"><span id="underline"></span>fine</span> images</h1>
             <h2>To represent a product</h2>
-            <p class="content para" id="para1">
-                Use mixed grid with imagery, replace with your own photos and descriptions
-            </p>
-            <p class="content para" id="para2">
-                This is multipurpose grid, it fits for portfolio, services or agency web sites
-            </p>
-            <p class="content para" id="para3">
-                <strong>We aimed to deliver HQ templates for Figma</strong> Used by 123 People
-            </p>
-            <img src="Content_images/Image_1.png" alt="img1">
-            <img src="Content_images/Image_2.png" alt="img2">
-            <img src="Content_images/Image_3.png" alt="img3">
-            <img src="Content_images/Image_4.png" alt="img4">
-            <img src="Content_images/Image_5.png" alt="img5">
-            <img src="Content_images/Image_6.png" alt="img6">
-            <img src="Content_images/Image_7.png" alt="img7">
-            <p class = "content_button"> Learn more </p>
-            <p class="added_text">Consider it done!</p>
-            <p class="added_text">See my goal?</p>
+            <div content_grid>
+                <div id="grid1">
+                    <p class="content para" id="para1">
+                    Use mixed grid with imagery, replace with your own photos and descriptions
+                    </p>
+                    <img class="content_img" id="img2" src="Content_images/Card 1.png" alt="img2">
+                    <button class = "blue_button" id="content_button" type="button"> Learn more </button>
+                </div>
+                <div id="grid2">
+                    <img class="content_img" id="img7" src="Content_images/Card 1_1.png" alt="img7">
+                    <img class="content_img" id="img4" src="Content_images/Image_4.png" alt="img4">
+                    <img class="content_img" id="img5" src="Content_images/Image_5.png" alt="img5">
+                </div>
+                <div id="grid3">
+                    <p class="content para" id="para2">
+                        This is multipurpose grid, it fits for portfolio, services or agency web sites
+                    </p>
+                    <img class="content_img" id="img1" src="Content_images/Card 1-1.png" alt="img1">
+                    <img class="content_img" id="img3" src="Content_images/Image_3.png" alt="img3">
+                    <img class="content_img" id="img6" src="Content_images/Image_6.png" alt="img6">
+                </div>
+            </div>
         </div>
         <div class="information box">
             <h3>Delivering good designs since 1954 🚚💨</h3>
@@ -62,98 +65,106 @@
                     <img id="icon_1" src="Content_images/Group_1.png"><br>
                     <strong>Support</strong><br>
                     <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma </p>
-                    <button class="feature_button" type="button">Learn more</button>
+                    <button class="white_button" type="button">Learn more</button>
                 </div>
                 <div class="feature_item">
                     <img id="icon_2" src="Content_images/Group_2"><br>
                     <strong>Sales growth</strong><br>
                     <p>Identify qualified customers with easy-to use live chat messaging and AI-based Sales Bot</p>
-                    <button class="feature_button type="button"" >Learn more</button>
+                    <button class="white_button type="button"" >Learn more</button>
                 </div>
                 <div class="feature_item">
                     <img id="icon_3" src="Content_images/Group_3"><br>
                     <strong>Component-driven</strong><br>
                     <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma</p>
-                    <button class="feature_button" type="button">Learn more</button>
+                    <button class="white_button" type="button">Learn more</button>
                 </div>
                 <div class="feature_item">
                     <img id="icon_4" src="Content_images/Group_4"><br>
                     <strong>Swap the icon</strong><br>
                     <p> You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter </p>
-                    <button class="feature_button" type="button">Learn more</button>
+                    <button class="white_button" type="button">Learn more</button>
                 </div>
             </div>
         </div>
-
-        <div class="Pricing box">
             <h2>Affordable pricing</h2>
             <p id="billme"> Bill me <span id=monthly>monthly</span> ~ yearly</p>
-            <div class="price box">
-                <div class="price title"> Like a pussy </div>
-                <div class="cost"><span id="amount">Free</span>/forever</div>
+        <div class="pricing">
+            <div class="price_box">
+                <div class="price_title"> Like a pussy </div>
+                <div class="cost"><span class="amount">Free</span>/forever</div>
                 <ul>
-                    <li>Components-driven system</li>
-                    <li>Sales-boosting landing pages</li>
-                    <li>Awesome Feather icons pack</li>
+                    <li><img src="Content_images/white_tick.png" class="tick"> Components-driven system</li>
+                    <li><img src="Content_images/white_tick.png" class="tick"> Sales-boosting landing pages</li>
+                    <li><img src="Content_images/white_tick.png" class="tick"> Awesome Feather icons pack</li>
+                    <li><div class="buffer dot">•</div></li>
+                    <li><div class="buffer dot">•</div></li>
                 </ul>
-                <div class="buy button">Try for free</div>
+                <button class="white_button" type="button" style="margin-left:25%">Try for free</button>
             </div>
 
-            <div class="prefered price box">
-                <div class="prefered price title">Individual</div>
-                <div class="cost"><span id="amount"></span></div>
+            <div class="preferred price_box">
+                <div class="price_title">👤 Individual</div>
+                <div class="cost"><span class="amount">$24</span>/MONTH</div>
                 <ul>
-                    <li>Components-driven system</li>
-                    <li>Sales-boosting landing pages</li>
-                    <li>Awesome Feather icon pack</li>
-                    <li>Themed into 3 different styles</li>
-                    <li>Will help to learn Figma</li>
+                    <li><img src="Content_images/yellow_tick.png" class="tick"> Components-driven system</li>
+                    <li><img src="Content_images/yellow_tick.png" class="tick"> Sales-boosting landing pages</li>
+                    <li><img src="Content_images/yellow_tick.png" class="tick"> Awesome Feather icon pack</li>
+                    <li><img src="Content_images/yellow_tick.png" class="tick"> Themed into 3 different styles</li>
+                    <li><img src="Content_images/yellow_tick.png" class="tick"> Will help to learn Figma</li>
                 </ul>
-                <div class="buy button">Regular license</div>
-            </div>
+                <button class="blue_button" id="preferred_button"type="button" style="margin-left:25%">Regular license</button>
 
-            <div class="price box">
-                <div class="price title"></div>
-                <div class="cost"><span id="amount"></span></div>
+            </div>
+            
+            <div class="price_box">
+                <div class="price_title">👥 Corporate</div>
+                <div class="cost"><span class="amount">$12</span>/EDITOR</div>
                 <ul>
-                    <li>Components-driven system</li>
-                    <li>Sales-boosting landing pages</li>
-                    <li>Awesome Feather icon pack</li>
-                    <li>Themed into 3 different styles</li>
+                    <li><img src="Content_images/white_tick.png" class="tick"> Components-driven system</li>
+                    <li><img src="Content_images/white_tick.png" class="tick"> Sales-boosting landing pages</li>
+                    <li><img src="Content_images/white_tick.png" class="tick"> Awesome Feather icon pack</li>
+                    <li><img src="Content_images/white_tick.png" class="tick"> Themed into 3 different styles</li>
+                    <li><div class="buffer dot">•</div></li>
                 </ul>
-                <div class="buy button">Extended license</div>
+                <button class="white_button" type="button" style="margin-left:25%">Extended license</button>
+
             </div>
         </div>
         <div class="footer box">
             <div class="ff box" id="ff1">
-                <p class="ff title">FOLLOW US<br></p>>
-                <img src="Content_images/icon-facebook.png">
-                <img src="Content_images/icon-linkedin.png">
-                <img src="Content_images/icon-slack.png">
-                <img src="Content_images/icon-twitter.png">
+                <p class="ff_title">FOLLOW US<br></p>
+                <img class ="ff1_content" src="Content_images/icon-facebook.png">
+                <img class ="ff1_content" src="Content_images/icon-linkedin.png">
+                <img class ="ff1_content" src="Content_images/icon-slack.png">
+                <img class ="ff1_content" src="Content_images/icon-twitter.png">
             </div>
 
             <div class="ff box" id="ff2">
-                <p class="ff title">FOLLOW US</p>
+                <p class="ff_title">FOLLOW US</p>
                 <p id="email"> hello@fapsterapp.com</p>
             </div>
-            <div class="ff box" id="ff3">
-                <p class="ff title">INFORMATION</p>
-                <div class="ff3 content">About Fapster app</div>
-                <div class="ff3 content">Onhover/Active</div>
-                <div class="ff3 content">We are hiring!</div>
-                <div class="ff3 content">Get In Touch</div>
-                <div class="ff3 content">Privacy Policy</div>
-                <div class="ff3 content">Resources</div>
-                <div class="ff3 content">Things We Like</div>
-                <div class="ff3 content">Terms of Service</div>
-              </div>
+            <div class="ff_box" id="ff3">
+                <p class="ff_title">INFORMATION</p>
+                <div id="ff3_item_box">
+                    <div class="ff3_content">About Fapster app</div>
+                    <div class="ff3_content">Onhover/Active</div>
+                    <div class="ff3_content">We are hiring!</div>
+                    <div class="ff3_content">Get In Touch</div>
+                    <div class="ff3_content">Privacy Policy</div>
+                    <div class="ff3_content">Resources</div>
+                    <div class="ff3_content">Things We Like</div>
+                    <div class="ff3_content">Terms of Service</div>
+                </div>
+            </div>
             <div class="ff box" id="ff4">
-                <p class="ff title">KEEP IN TOUCH</p>
-                <input type="text" id="Your name" name="Your name" placeholder="Your name">
-                <input type="text" id="Your email" name="Your email" placeholder="E-mail">
-                <input type="text" id="message" name="message" placeholder="Leave your message">
-                <div class="ff_button">Send</div>
+                <p class="ff_title">KEEP IN TOUCH</p>
+                <div id="ff4_item_box">
+                    <input class="ff4_item" type="text" id="Your name" name="your_name" placeholder="Your name">
+                    <input class="ff4_item" type="text" id="Your email" name="your_email" placeholder="E-mail">
+                    <input class="ff4_item" type="text" id="message" name="message" placeholder="Leave your message">
+                    <button type="button" class="blue_button" id="ff_button">Send</button>
+                </div>
                 
             </div>
             
