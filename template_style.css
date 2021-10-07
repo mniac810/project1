@@ -3,6 +3,8 @@ body{
     margin:0;
     width: 90vw;
     font-family: Inter;
+    font-size: 20px;
+
     background-image: url(Content_images/Wave.png);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -64,22 +66,38 @@ h3{
     }
 
     .nav{
+        width: 90vw;
         background-color: white;
-        display: flex;
+        display: grid;
+        grid-template-columns: 15vw 1fr 15vw;
         position: fixed;
         z-index: 1000;
         padding: 0;
         width: 100%;
         margin: 0;
-        justify-content: space-evenly;
         align-items: center;
         /* border-bottom: 2px black solid; */
         box-shadow: 0px 3px 3px 0px rgb(0,0,0,.18);
     }
+        #menu_item{
+            display: flex;
+            justify-content: space-around;
+        }
+        @media(max-width:800px){
+            #menu_item{
+                visibility: hidden;
+            }
+        }
+
+        #signin{
+            width: 10em;
+            margin-left: 2em;
+        }
     .blue_button{
         border:2px #6C5CE7 solid;
         background-color: #6C5CE7;
         color: white;
+
         border-radius: 22px;
         text-shadow: 0px 2px 4px rgba(38, 50, 56, 0.16), 0px 4px 8px rgba(38, 50, 56, 0.08);
         padding: 0px 20px;
@@ -241,7 +259,25 @@ h3{
         width: 3.5em;
         height: 3.5em;
     } 
-
+    @media (max-width:1024px) { 
+        .feature_box{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5px;
+        }
+        .feature_item{
+            width: 15em;
+        }
+    }
+    @media (max-width:570px) { 
+        .feature_box{
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            margin-left: 15vw;
+        }
+    }
 
         #billme{
             font-weight: bold;
@@ -265,6 +301,22 @@ h3{
         display: flex;
         justify-content: center;
     }
+
+    @media (max-width:1024px){
+        .pricing{
+            flex-direction: column;
+            width: 25em;
+            align-content: center;
+            margin-left: 15vw;
+        }
+    }
+    @media (max-width: 600px){
+        .pricing{
+            margin-left: 0;
+            align-items: flex-start;
+        }
+    }
+   
 
     .price_box{
         height: 22em;
@@ -309,11 +361,30 @@ h3{
         grid-gap: 10px;
 
     }
+
+    @media (max-width:800px){
+        h1{
+            font-size: 64px;
+        }
+        h2{
+            font-size: 48;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+        }
+        #ff4{
+            visibility: hidden;
+        }
+    }
+
     .ff_title{
         font-size: 12px;
         line-height: 16px;
         color: #ADADAD;
-            }
+        margin-bottom: 0.5em;
+    }
 
         #ff1{
             grid-area: ff1;
@@ -326,6 +397,7 @@ h3{
             grid-area: ff2;
         }
             #email{
+                margin:0;
                 font-weight: bold;
                 color:#6C5CE7;
                 font-size: 28px;
